@@ -6,8 +6,25 @@
 </head>
 <body>
   <h1>Digital Clock</h1>
-  <div id="clock"></div>
-  <div id="date"></div>
+<div id="clock"></div>
+<div id="date"></div>
+
+<div style="margin-top:20px;">
+  <input type="text" id="nameInput" placeholder="Enter your name" />
+  <button onclick="saveName()">Save Name</button>
+  <button onclick="toggleLanguage()">Switch Language</button>
+  <button id="speakButton" onclick="speakGreeting()" title="Speak time">
+    <svg viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="micGradient" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#ffcc00"/>
+          <stop offset="100%" stop-color="#ff9900"/>
+        </linearGradient>
+      </defs>
+      <path d="M192 0c-53 0-96 43-96 96v160c0 53 43 96 96 96s96-43 96-96V96c0-53-43-96-96-96zM352 256c0 88.4-71.6 160-160 160s-160-71.6-160-160H0c0 105.9 81.6 193.2 185.6 207.5V448H144c-8.8 0-16 7.2-16 16v32h128v-32c0-8.8-7.2-16-16-16h-41.6v-14.5C302.4 449.2 384 361.9 384 256h-32z"/>
+    </svg>
+  </button>
+</div>
 
   <script src="script.js" >
    
